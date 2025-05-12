@@ -1974,7 +1974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9aff4446173594c839852bc1d24230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 9c1398329f927fb4b879998584055ca8, type: 3}
+  hoverSound: {fileID: 8300000, guid: 30ba95afaf7370d4c88d8b1c4d7c106a, type: 3}
+  clickSound: {fileID: 8300000, guid: 9c1398329f927fb4b879998584055ca8, type: 3}
   fadeOutTime: 0.1
 --- !u!65 &1806009416
 BoxCollider:
