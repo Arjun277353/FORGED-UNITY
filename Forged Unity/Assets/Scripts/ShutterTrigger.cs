@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class TriggerAnimation : MonoBehaviour
 {
-    [SerializeField] private Animator shutterAnimator; // Assign the shutter's Animator in the Inspector
-    [SerializeField] private GameObject triggerButton; // Assign the trigger button object (with 2D Box Collider)
+    [SerializeField] private Animator shutterAnimator; 
+    [SerializeField] private GameObject triggerButton; 
     private bool hasOpened = false;
 
     private void OnMouseDown()
