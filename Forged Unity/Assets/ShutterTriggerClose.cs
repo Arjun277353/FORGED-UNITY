@@ -1,30 +1,63 @@
 using UnityEngine;
 
-public class TriggerAnimationClose : MonoBehaviour
+public class TriggerAnimationTest: MonoBehaviour
 {
-    [SerializeField] private Animator shutterAnimator; 
-    [SerializeField] private GameObject triggerButton;
-    private bool hasClosed = false;
+    [SerializeField] private Animator shutterAnimator;
+    [SerializeField] private GameObject triggerButton; 
+
+    private bool isOpened = false;
+    private bool dialogueFinished = false;
 
     private void OnMouseDown()
     {
         Debug.Log("Trigger Pressed");
 
-        if (hasClosed || shutterAnimator == null)
+        if (shutterAnimator == null)
         {
-            Debug.LogError("Already closed or shutterAnimator is missing!");
+            Debug.LogError("Shutter Animator is missing!");
             return;
         }
 
-        Debug.Log("Closing Shutter Directly");
-        shutterAnimator.Play("Open"); // Directly plays the Open animation
-        hasClosed = true;
+        
+        if (!isOpened && !dialogueFinished)
+        {
+            Debug.Log("Opening Shutter");
+            shutterAnimator.SetBool("IsOpen", true);
+            isOpened = true;
 
-        // Disable button (make it uninteractable)
+            
+            if (triggerButton != null)
+            {
+                triggerButton.GetComponent<Collider2D>().enabled = false;
+                Debug.Log("Trigger Disabled");
+            }
+
+        }
+
+       
+        else if (isOpened && dialogueFinished)
+        {
+            Debug.Log("Closing Shutter");
+            shutterAnimator.SetBool("IsOpen", false);
+            isOpened = false;
+
+            
+            triggerButton.GetComponent<Collider2D>().enabled = false;
+        }
+    }
+
+    
+    public void OnDialogueFinished()
+    {
+        Debug.Log("Dialogue Finished");
+
+        dialogueFinished = true;
+
+        
         if (triggerButton != null)
         {
-            triggerButton.GetComponent<Collider2D>().enabled = false;
-            Debug.Log("Trigger Disabled");
+            triggerButton.GetComponent<Collider2D>().enabled = true;
+            Debug.Log("Trigger Re-enabled for Closing");
         }
     }
 }
