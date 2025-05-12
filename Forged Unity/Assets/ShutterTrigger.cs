@@ -17,10 +17,10 @@ public class TriggerAnimation : MonoBehaviour
         }
 
         Debug.Log("Opening Shutter Directly");
-        shutterAnimator.Play("Open"); // Directly plays the Open animation
+        shutterAnimator.SetBool("IsOpen", true); 
         hasOpened = true;
 
-        // Disable button (make it uninteractable)
+        
         if (triggerButton != null)
         {
             triggerButton.GetComponent<Collider2D>().enabled = false;
