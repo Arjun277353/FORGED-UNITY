@@ -1689,7 +1689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516475574}
   - component: {fileID: 1516475573}
-  - component: {fileID: 1516475572}
+  - component: {fileID: 1516475575}
   m_Layer: 0
   m_Name: Shutter Trigger
   m_TagString: Untagged
@@ -1697,20 +1697,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1516475572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516475571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b09fae8f8916bdf4f8cdc09a117b76b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shutterAnimator: {fileID: 837881073}
-  triggerButton: {fileID: 1516475571}
 --- !u!61 &1516475573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1772,6 +1758,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1516475575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516475571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c5f688f5986814da7a4d82cf932131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shutterAnimator: {fileID: 837881073}
+  triggerButton: {fileID: 837881069}
 --- !u!1 &1540058124
 GameObject:
   m_ObjectHideFlags: 0
