@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class MoveCharacterBlockerEvent : MonoBehaviour
 {
-    [SerializeField] private Transform characterBlocker; // Assign the Character Blocker object here
-    [SerializeField] private Vector3 targetPosition = new Vector3(0, 5.6f, 9f); // Target position
-    [SerializeField] private float moveSpeed = 2f; // Speed of movement
+    [SerializeField] private Transform characterBlocker; 
+    [SerializeField] private Vector3 targetPosition = new Vector3(0, 5.6f, 9f); 
+    [SerializeField] private float moveSpeed = 2f; 
 
-    // This function can be called by the dialogue system as an event
+    
     public void TriggerBlockerMovement()
     {
         if (characterBlocker == null)
@@ -30,6 +30,6 @@ public class MoveCharacterBlockerEvent : MonoBehaviour
             yield return null;
         }
 
-        characterBlocker.position = targetPosition; // Ensure it reaches the exact target
+        characterBlocker.position = targetPosition; 
     }
 }
