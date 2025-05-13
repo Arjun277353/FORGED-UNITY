@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class MoveDocumentEvent : MonoBehaviour
 {
     [SerializeField] private Transform document;
-    [SerializeField] private Vector3 targetPosition = new Vector3(0, 0.89f, 8.34f);
+    [SerializeField] private Vector3 targetPosition = new Vector3(0, 0.89f, 7.22f); // Updated Z position
 
     [Header("Event Triggers")]
     public UnityEvent onDocumentMoved;

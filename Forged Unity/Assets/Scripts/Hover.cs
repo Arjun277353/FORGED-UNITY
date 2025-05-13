@@ -4,13 +4,13 @@ using System.Collections;
 public class HoverEffect : MonoBehaviour
 {
     // Visual Effect Targets
-    private Vector3 initialPosition = new Vector3(0, 0.89f, 8.34f);
-    private Vector3 targetPosition = new Vector3(0, 1.8f, 8.34f);
-    private float initialRotation = 92.67f;
-    private float targetRotation = 25f;
+    private Vector3 initialPosition = new Vector3(0, 0.89f, 7.22f);
+    private Vector3 targetPosition = new Vector3(0, 2f, 8.5f); // Updated target position
+    private float initialRotation = 40f;
+    private float targetRotation = 18f; // Updated target rotation (X axis)
     private Vector3 initialScale = Vector3.one * 0.5f;
-    private Vector3 targetScale = Vector3.one * 0.6f;
-    private Vector3 clickScale = Vector3.one * 0.44f; // Changed to 0.44
+    private Vector3 targetScale = Vector3.one * 0.7f; // Updated target scale
+    private Vector3 clickScale = Vector3.one * 0.44f;
 
     // Audio Settings
     [SerializeField] private AudioClip hoverSound;
@@ -36,14 +36,14 @@ public class HoverEffect : MonoBehaviour
 
     private void Update()
     {
-        // Handle click and hold scaling (now to 0.44)
+        // Handle click and hold scaling
         if (isClicked && Input.GetMouseButton(0))
         {
             transform.localScale = Vector3.Lerp(transform.localScale, clickScale, Time.deltaTime * 10);
         }
         else if (isHovered)
         {
-            // Smooth hover transition
+            // Smooth hover transition with new target values
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 5);
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(targetRotation, 0, 0), Time.deltaTime * 5);
             transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * 5);
@@ -57,6 +57,7 @@ public class HoverEffect : MonoBehaviour
         }
     }
 
+    // Rest of the script remains unchanged...
     private void OnMouseEnter()
     {
         isHovered = true;
