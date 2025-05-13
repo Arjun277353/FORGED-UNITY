@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class TriggerAnimation : MonoBehaviour
 {
-    [SerializeField] private Animator shutterAnimator; 
-    [SerializeField] private GameObject triggerButton; 
+    [SerializeField] private Animator shutterAnimator;
+    [SerializeField] private GameObject triggerButton;
     private bool hasOpened = false;
 
     private void OnMouseDown()
@@ -17,10 +17,10 @@ public class TriggerAnimation : MonoBehaviour
         }
 
         Debug.Log("Opening Shutter Directly");
-        shutterAnimator.SetBool("IsOpen", true); 
+        shutterAnimator.SetBool("IsOpen", true);
         hasOpened = true;
 
-        
+
         if (triggerButton != null)
         {
             triggerButton.GetComponent<Collider2D>().enabled = false;
