@@ -1173,6 +1173,7 @@ GameObject:
   - component: {fileID: 1126812516}
   - component: {fileID: 1126812514}
   - component: {fileID: 1126812518}
+  - component: {fileID: 1126812519}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -1316,6 +1317,25 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 5
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1126812519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 6
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -1792,7 +1812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 6
+  CurrentIDCounter: 7
   json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":629.8333,\"yPos\":133},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Show
     me your documents\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":629.8334,\"yPos\":358},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Read
     Documents*\",\"parentUIDs\":[2],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":634.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Please\u2026
@@ -1809,23 +1829,12 @@ MonoBehaviour:
   - {fileID: 1126812516}
   - {fileID: 1126812514}
   - {fileID: 1126812518}
+  - {fileID: 1126812519}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1856547782}
-        m_TargetAssemblyTypeName: DocumentHoverController, Assembly-CSharp
-        m_MethodName: EnableHoverOnDocument
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1540058126
 Transform:
   m_ObjectHideFlags: 0
