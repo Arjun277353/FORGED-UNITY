@@ -1,16 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(RawImage))]
 public class texture2d_drawing : MonoBehaviour
 {
     public int textureWidth = 2048;
     public int textureHeight = 2048;
     public int brushSize = 10;
     public Color drawColor = new Color(0, 0, 0, 1);
-
-    private Vector2? lastDrawPosition = null;
     public float spacing = 1f;
 
+    private Vector2? lastDrawPosition = null;
     private Texture2D drawTexture;
     private RawImage rawImage;
 
@@ -24,6 +24,7 @@ public class texture2d_drawing : MonoBehaviour
         rawImage = GetComponent<RawImage>();
         rawImage.texture = drawTexture;
 
+        // Optional transparent shader for RawImage
         rawImage.material = new Material(Shader.Find("UI/Unlit/Transparent"));
     }
 
@@ -32,17 +33,24 @@ public class texture2d_drawing : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector2 localPoint;
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            bool isInside = RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 rawImage.rectTransform,
                 Input.mousePosition,
-                null,
+                Camera.main, // Important for world space
                 out localPoint
             );
+
+            if (!isInside)
+                return;
 
             Rect rect = rawImage.rectTransform.rect;
 
             float u = (localPoint.x - rect.x) / rect.width;
             float v = (localPoint.y - rect.y) / rect.height;
+
+            // Boundary check
+            if (u < 0 || u > 1 || v < 0 || v > 1)
+                return;
 
             int x = Mathf.RoundToInt(u * textureWidth);
             int y = Mathf.RoundToInt(v * textureHeight);
@@ -97,7 +105,6 @@ public class texture2d_drawing : MonoBehaviour
 
     void ClearTexture()
     {
-        
         Color[] clearColors = new Color[textureWidth * textureHeight];
         for (int i = 0; i < clearColors.Length; i++)
             clearColors[i] = new Color(0, 0, 0, 0);
