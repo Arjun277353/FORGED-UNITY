@@ -1,29 +1,36 @@
 using UnityEngine;
 using UnityEngine.UI;
+
 public class texture2d_drawing : MonoBehaviour
 {
     public int textureWidth = 2048;
     public int textureHeight = 2048;
     public int brushSize = 10;
-    public Color drawColor = Color.black;
+    public Color drawColor = new Color(0, 0, 0, 1);
 
     private Vector2? lastDrawPosition = null;
     public float spacing = 1f;
 
     private Texture2D drawTexture;
     private RawImage rawImage;
+
     void Start()
     {
         drawTexture = new Texture2D(textureWidth, textureHeight, TextureFormat.RGBA32, false);
+        drawTexture.filterMode = FilterMode.Bilinear;
+
         ClearTexture();
+
         rawImage = GetComponent<RawImage>();
         rawImage.texture = drawTexture;
+
+        rawImage.material = new Material(Shader.Find("UI/Unlit/Transparent"));
     }
 
     void Update()
     {
-        if(Input.GetMouseButton(0))
-    {
+        if (Input.GetMouseButton(0))
+        {
             Vector2 localPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 rawImage.rectTransform,
@@ -60,7 +67,7 @@ public class texture2d_drawing : MonoBehaviour
 
             lastDrawPosition = currentPos;
         }
-    else
+        else
         {
             lastDrawPosition = null;
         }
@@ -85,14 +92,15 @@ public class texture2d_drawing : MonoBehaviour
             }
         }
 
-        drawTexture.Apply(); // Update the image
+        drawTexture.Apply();
     }
 
     void ClearTexture()
     {
+        
         Color[] clearColors = new Color[textureWidth * textureHeight];
         for (int i = 0; i < clearColors.Length; i++)
-            clearColors[i] = Color.white;
+            clearColors[i] = new Color(0, 0, 0, 0);
 
         drawTexture.SetPixels(clearColors);
         drawTexture.Apply();
