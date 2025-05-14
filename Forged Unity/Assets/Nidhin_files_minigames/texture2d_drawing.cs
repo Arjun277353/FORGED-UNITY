@@ -24,7 +24,6 @@ public class texture2d_drawing : MonoBehaviour
         rawImage = GetComponent<RawImage>();
         rawImage.texture = drawTexture;
 
-        // Optional transparent shader for RawImage
         rawImage.material = new Material(Shader.Find("UI/Unlit/Transparent"));
     }
 
@@ -36,7 +35,7 @@ public class texture2d_drawing : MonoBehaviour
             bool isInside = RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 rawImage.rectTransform,
                 Input.mousePosition,
-                Camera.main, // Important for world space
+                Camera.main,
                 out localPoint
             );
 
@@ -48,7 +47,7 @@ public class texture2d_drawing : MonoBehaviour
             float u = (localPoint.x - rect.x) / rect.width;
             float v = (localPoint.y - rect.y) / rect.height;
 
-            // Boundary check
+        
             if (u < 0 || u > 1 || v < 0 || v > 1)
                 return;
 
