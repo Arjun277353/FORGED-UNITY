@@ -1595,8 +1595,9 @@ GameObject:
   - component: {fileID: 850347442}
   - component: {fileID: 850347441}
   - component: {fileID: 850347440}
+  - component: {fileID: 850347444}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: BackBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1692,6 +1693,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &850347444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850347439}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ada6d023368614a9a275240e477341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 16
+  fadeSpeed: 1
 --- !u!1 &1071556600
 GameObject:
   m_ObjectHideFlags: 0
@@ -3297,7 +3312,7 @@ Transform:
   m_GameObject: {fileID: 1806009411}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 0, y: -5.5, z: 8.34}
+  m_LocalPosition: {x: 0, y: 4.22, z: 8.34}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3327,7 +3342,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806009411}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c9aff4446173594c839852bc1d24230, type: 3}
   m_Name: 
@@ -3335,6 +3350,7 @@ MonoBehaviour:
   hoverSound: {fileID: 8300000, guid: 30ba95afaf7370d4c88d8b1c4d7c106a, type: 3}
   clickSound: {fileID: 8300000, guid: 9c1398329f927fb4b879998584055ca8, type: 3}
   fadeOutTime: 0.1
+  scriptToActivate: {fileID: 850347444}
 --- !u!65 &1806009416
 BoxCollider:
   m_ObjectHideFlags: 0
