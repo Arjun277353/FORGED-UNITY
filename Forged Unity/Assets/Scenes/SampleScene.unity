@@ -935,6 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetAnimator: {fileID: 56715030}
+  moveFadeScript: {fileID: 2047258070}
 --- !u!1 &452963542
 GameObject:
   m_ObjectHideFlags: 0
@@ -4035,7 +4036,7 @@ GameObject:
   - component: {fileID: 2047258070}
   - component: {fileID: 2047258071}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Fade+transition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4116,7 +4117,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047258065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bcaaddcd870ff148a567c7444a25775, type: 3}
   m_Name: 
