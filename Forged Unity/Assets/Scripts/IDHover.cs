@@ -157,7 +157,7 @@ public class IDHover : MonoBehaviour
         fadeOutCoroutine = null;
     }
 
-    // Method to enable the collider externally (through Dialogue Editor)
+    
     public void EnableCollider()
     {
         if (boxCollider == null)
