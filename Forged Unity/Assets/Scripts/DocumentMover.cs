@@ -19,5 +19,8 @@ public class MoveDocumentEvent : MonoBehaviour
 
         document.position = targetPosition;
         onDocumentMoved?.Invoke();
+
+        // Disable this script after moving
+        this.enabled = false;
     }
 }

@@ -5,6 +5,9 @@ public class CloseEnable : MonoBehaviour
     public Animator targetAnimator; // The animator on CloseShutter
     private Collider2D triggerCollider;
 
+    [Header("Smooth Move and Fade Settings")]
+    [SerializeField] private SmoothMoveFade moveFadeScript; // The SmoothMoveFade script on your 3D plane
+
     void Start()
     {
         triggerCollider = GetComponent<Collider2D>();
@@ -15,6 +18,12 @@ public class CloseEnable : MonoBehaviour
         else
         {
             Debug.LogWarning("No Collider2D found on this object.");
+        }
+
+        // Ensure the move fade script is disabled initially
+        if (moveFadeScript != null)
+        {
+            moveFadeScript.enabled = false;
         }
     }
 
@@ -40,6 +49,17 @@ public class CloseEnable : MonoBehaviour
             else
             {
                 Debug.LogWarning("Target Animator is not assigned.");
+            }
+
+            // Activate the SmoothMoveFade script
+            if (moveFadeScript != null)
+            {
+                moveFadeScript.enabled = true;
+                Debug.Log("SmoothMoveFade script activated.");
+            }
+            else
+            {
+                Debug.LogWarning("MoveFade script is not assigned.");
             }
         }
     }
