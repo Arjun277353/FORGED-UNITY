@@ -20,11 +20,18 @@ public class HoverEffect : MonoBehaviour
     private AudioSource audioSource;
     private bool isHovered = false;
     private bool isClicked = false;
-    private bool movedToY20 = false;
+    private bool hasMovedToFinalPosition = false;
     private Coroutine fadeOutCoroutine;
 
-    // Event Trigger
-    [SerializeField] private MonoBehaviour scriptToActivate;
+    // Event Triggers (Up to 5 scripts)
+    [SerializeField] private MonoBehaviour scriptToActivate1;
+    [SerializeField] private MonoBehaviour scriptToActivate2;
+    [SerializeField] private MonoBehaviour scriptToActivate3;
+    [SerializeField] private MonoBehaviour scriptToActivate4;
+    [SerializeField] private MonoBehaviour scriptToActivate5;
+
+    // Box Collider Reference
+    private BoxCollider boxCollider;
 
     private void Start()
     {
@@ -38,21 +45,23 @@ public class HoverEffect : MonoBehaviour
         audioSource.playOnAwake = false;
         audioSource.loop = false;
 
-        // Make sure the target script is initially disabled
-        if (scriptToActivate != null)
+        // Make sure the target scripts are initially disabled
+        DisableScripts();
+
+        // Get and enable the Box Collider immediately
+        boxCollider = GetComponent<BoxCollider>();
+        if (boxCollider != null)
         {
-            scriptToActivate.enabled = false;
+            boxCollider.enabled = true; // Enabled immediately
         }
     }
 
     private void Update()
     {
-        if (movedToY20)
-        {
-            // If moved to Y = 20, do nothing
-            return;
-        }
-        else if (isClicked)
+        if (hasMovedToFinalPosition)
+            return; // Stop further updates once it has moved to Y = 20
+
+        if (isClicked)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, clickScale, Time.deltaTime * 10);
         }
@@ -72,8 +81,6 @@ public class HoverEffect : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (movedToY20) return; // Prevent hover effects if already moved to Y = 20
-
         isHovered = true;
 
         if (fadeOutCoroutine != null)
@@ -91,8 +98,6 @@ public class HoverEffect : MonoBehaviour
 
     private void OnMouseExit()
     {
-        if (movedToY20) return; // Prevent hover effects if already moved to Y = 20
-
         isHovered = false;
         isClicked = false;
 
@@ -108,8 +113,6 @@ public class HoverEffect : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (movedToY20) return; // Prevent click effects if already moved to Y = 20
-
         isClicked = true;
         if (clickSound != null)
         {
@@ -119,19 +122,32 @@ public class HoverEffect : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (movedToY20) return; // Prevent further actions if already moved to Y = 20
-
         isClicked = false;
 
-        // Move instantly to y = 20
+        // Instantly move to Y = 20 and stay there
         transform.position = new Vector3(transform.position.x, 20, transform.position.z);
-        movedToY20 = true;
+        hasMovedToFinalPosition = true;
 
-        // Activate the specified script
-        if (scriptToActivate != null)
-        {
-            scriptToActivate.enabled = true;
-        }
+        // Activate the specified scripts
+        EnableScripts();
+    }
+
+    private void EnableScripts()
+    {
+        if (scriptToActivate1 != null) scriptToActivate1.enabled = true;
+        if (scriptToActivate2 != null) scriptToActivate2.enabled = true;
+        if (scriptToActivate3 != null) scriptToActivate3.enabled = true;
+        if (scriptToActivate4 != null) scriptToActivate4.enabled = true;
+        if (scriptToActivate5 != null) scriptToActivate5.enabled = true;
+    }
+
+    private void DisableScripts()
+    {
+        if (scriptToActivate1 != null) scriptToActivate1.enabled = false;
+        if (scriptToActivate2 != null) scriptToActivate2.enabled = false;
+        if (scriptToActivate3 != null) scriptToActivate3.enabled = false;
+        if (scriptToActivate4 != null) scriptToActivate4.enabled = false;
+        if (scriptToActivate5 != null) scriptToActivate5.enabled = false;
     }
 
     private IEnumerator FadeOutSound()
