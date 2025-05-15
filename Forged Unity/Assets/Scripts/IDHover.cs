@@ -56,11 +56,11 @@ public class IDHover : MonoBehaviour
         audioSource.playOnAwake = false;
         audioSource.loop = false;
 
-        // Get and enable the Box Collider immediately
+        // Get the Box Collider but leave it disabled initially
         boxCollider = GetComponent<BoxCollider>();
         if (boxCollider != null)
         {
-            boxCollider.enabled = true;
+            boxCollider.enabled = false; // Disabled by default, should be enabled through an event
         }
         else
         {
@@ -92,7 +92,7 @@ public class IDHover : MonoBehaviour
             targetSc = targetScale;
         }
 
-        // Smooth position with enhanced smoothness
+        // Smooth position
         currentPosition = Vector3.SmoothDamp(currentPosition, targetPos, ref positionVelocity, smoothTime, Mathf.Infinity, Time.deltaTime);
         transform.position = currentPosition;
 
@@ -107,6 +107,8 @@ public class IDHover : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if (boxCollider == null || !boxCollider.enabled) return;
+
         isHovered = true;
 
         if (fadeOutCoroutine != null)
@@ -139,6 +141,8 @@ public class IDHover : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (boxCollider == null || !boxCollider.enabled) return;
+
         isClicked = true;
         if (clickSound != null)
         {
@@ -149,12 +153,6 @@ public class IDHover : MonoBehaviour
     private void OnMouseUp()
     {
         isClicked = false;
-
-        // Disable Box Collider
-        if (boxCollider != null)
-        {
-            boxCollider.enabled = false;
-        }
 
         // Instantly move the sprite
         if (targetSprite != null)
@@ -178,5 +176,14 @@ public class IDHover : MonoBehaviour
         audioSource.Stop();
         audioSource.volume = startVolume;
         fadeOutCoroutine = null;
+    }
+
+    // This method can be called through the Dialogue Editor to enable the collider
+    public void EnableCollider()
+    {
+        if (boxCollider != null)
+        {
+            boxCollider.enabled = true;
+        }
     }
 }
