@@ -13,16 +13,25 @@ public class DocumentHoverController : MonoBehaviour
             return;
         }
 
-        // Enable the HoverEffect script using its exact name
+        // Try enabling IDHover script first
+        IDHover idHoverScript = document.GetComponent<IDHover>();
+        if (idHoverScript != null)
+        {
+            idHoverScript.enabled = true;
+            Debug.Log("IDHover script enabled on Document.");
+            return;
+        }
+
+        // If IDHover is not found, try enabling HoverEffect (for compatibility)
         HoverEffect hoverScript = document.GetComponent<HoverEffect>();
         if (hoverScript != null)
         {
             hoverScript.enabled = true;
             Debug.Log("HoverEffect script enabled on Document.");
+            return;
         }
-        else
-        {
-            Debug.LogError("HoverEffect script not found on Document!");
-        }
+
+        // If neither script is found, log an error
+        Debug.LogError("Neither IDHover nor HoverEffect script found on Document!");
     }
 }
