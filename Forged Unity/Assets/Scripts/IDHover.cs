@@ -33,7 +33,12 @@ public class IDHover : MonoBehaviour
     private BoxCollider boxCollider;
 
     // Smoothing Speed
-    [SerializeField] private float smoothTime = 0.05f; // Lower for ultra-smooth
+    [SerializeField] private float smoothTime = 0.05f;
+
+    // Target Sprite and Position
+    [SerializeField] private GameObject targetSprite;
+    [SerializeField] private Vector3 spriteTargetPosition = new Vector3(0, 5, 6);
+    private Vector3 spriteInitialPosition;
 
     private void Start()
     {
@@ -55,11 +60,17 @@ public class IDHover : MonoBehaviour
         boxCollider = GetComponent<BoxCollider>();
         if (boxCollider != null)
         {
-            boxCollider.enabled = true; // Enabled immediately
+            boxCollider.enabled = true;
         }
         else
         {
             Debug.LogWarning("No BoxCollider found on this object.");
+        }
+
+        // Store sprite's initial position
+        if (targetSprite != null)
+        {
+            spriteInitialPosition = targetSprite.transform.position;
         }
     }
 
@@ -143,6 +154,12 @@ public class IDHover : MonoBehaviour
         if (boxCollider != null)
         {
             boxCollider.enabled = false;
+        }
+
+        // Instantly move the sprite
+        if (targetSprite != null)
+        {
+            targetSprite.transform.position = spriteTargetPosition;
         }
     }
 
