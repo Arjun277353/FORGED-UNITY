@@ -5,13 +5,9 @@ using UnityEngine.Events;
 public class HoverEffect : MonoBehaviour
 {
     // Visual Effect Targets
-    private Vector3 initialPosition = new Vector3(0, 0.89f, 7.22f);
-    private Vector3 targetPosition = new Vector3(0, 2f, 8.5f);
-    private float initialRotation = 40f;
-    private float targetRotation = 18f;
-    private Vector3 initialScale = Vector3.one * 0.5f;
-    private Vector3 targetScale = Vector3.one * 0.7f;
-    private Vector3 clickScale = Vector3.one * 0.44f;
+    private Vector3 initialScale = Vector3.one;
+    private Vector3 hoverScale = Vector3.one * 1.2f;
+    private Vector3 clickScale = Vector3.one * 0.8f;
 
     // Audio Settings
     [SerializeField] private AudioClip hoverSound;
@@ -20,7 +16,6 @@ public class HoverEffect : MonoBehaviour
     private AudioSource audioSource;
     private bool isHovered = false;
     private bool isClicked = false;
-    private bool hasMovedToFinalPosition = false;
     private Coroutine fadeOutCoroutine;
 
     // Event Triggers (Up to 5 scripts)
@@ -30,14 +25,12 @@ public class HoverEffect : MonoBehaviour
     [SerializeField] private MonoBehaviour scriptToActivate4;
     [SerializeField] private MonoBehaviour scriptToActivate5;
 
-    // Box Collider Reference
-    private BoxCollider boxCollider;
+    // 2D Box Collider Reference
+    private BoxCollider2D boxCollider2D;
 
     private void Start()
     {
         // Set initial visual state
-        transform.position = initialPosition;
-        transform.rotation = Quaternion.Euler(initialRotation, 0, 0);
         transform.localScale = initialScale;
 
         // Configure audio source
@@ -48,33 +41,31 @@ public class HoverEffect : MonoBehaviour
         // Make sure the target scripts are initially disabled
         DisableScripts();
 
-        // Get and enable the Box Collider immediately
-        boxCollider = GetComponent<BoxCollider>();
-        if (boxCollider != null)
+        // Get and enable the 2D Box Collider immediately
+        boxCollider2D = GetComponent<BoxCollider2D>();
+        if (boxCollider2D != null)
         {
-            boxCollider.enabled = true; // Enabled immediately
+            boxCollider2D.enabled = true;
+        }
+        else
+        {
+            Debug.LogWarning("No 2D BoxCollider found on this object.");
         }
     }
 
     private void Update()
     {
-        if (hasMovedToFinalPosition)
-            return; // Stop further updates once it has moved to Y = 20
-
+        // Smoothly adjust the scale based on hover and click state
         if (isClicked)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, clickScale, Time.deltaTime * 10);
         }
         else if (isHovered)
         {
-            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 5);
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(targetRotation, 0, 0), Time.deltaTime * 5);
-            transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * 5);
+            transform.localScale = Vector3.Lerp(transform.localScale, hoverScale, Time.deltaTime * 5);
         }
         else
         {
-            transform.position = Vector3.Lerp(transform.position, initialPosition, Time.deltaTime * 5);
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(initialRotation, 0, 0), Time.deltaTime * 5);
             transform.localScale = Vector3.Lerp(transform.localScale, initialScale, Time.deltaTime * 5);
         }
     }
@@ -118,18 +109,28 @@ public class HoverEffect : MonoBehaviour
         {
             audioSource.PlayOneShot(clickSound);
         }
+
+        // Disable the 2D BoxCollider immediately
+        if (boxCollider2D != null)
+        {
+            boxCollider2D.enabled = false;
+        }
     }
 
     private void OnMouseUp()
     {
         isClicked = false;
-
-        // Instantly move to Y = 20 and stay there
-        transform.position = new Vector3(transform.position.x, 20, transform.position.z);
-        hasMovedToFinalPosition = true;
+        isHovered = true; // Briefly back to hover scale
+        StartCoroutine(ResetToNormalScale());
 
         // Activate the specified scripts
         EnableScripts();
+    }
+
+    private IEnumerator ResetToNormalScale()
+    {
+        yield return new WaitForSeconds(0.1f); // Small delay for smooth transition
+        isHovered = false; // This will smoothly scale it back to 1
     }
 
     private void EnableScripts()
