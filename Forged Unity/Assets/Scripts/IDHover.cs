@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class IDHover : MonoBehaviour
 {
@@ -12,14 +13,6 @@ public class IDHover : MonoBehaviour
     private Vector3 targetScale = Vector3.one * 0.7f;
     private Vector3 clickScale = Vector3.one * 0.44f;
 
-    // Smooth Damping
-    private Vector3 currentPosition;
-    private Vector3 positionVelocity;
-    private float currentRotation;
-    private float rotationVelocity;
-    private Vector3 currentScale;
-    private Vector3 scaleVelocity;
-
     // Audio Settings
     [SerializeField] private AudioClip hoverSound;
     [SerializeField] private AudioClip clickSound;
@@ -27,18 +20,14 @@ public class IDHover : MonoBehaviour
     private AudioSource audioSource;
     private bool isHovered = false;
     private bool isClicked = false;
+    private bool hasMovedToFinalPosition = false;
     private Coroutine fadeOutCoroutine;
+
+    // Event Trigger (Single Script)
+    [SerializeField] private MonoBehaviour scriptToActivate;
 
     // Box Collider Reference
     private BoxCollider boxCollider;
-
-    // Smoothing Speed
-    [SerializeField] private float smoothTime = 0.05f;
-
-    // Target Sprite and Position
-    [SerializeField] private GameObject targetSprite;
-    [SerializeField] private Vector3 spriteTargetPosition = new Vector3(0, 5, 6);
-    private Vector3 spriteInitialPosition;
 
     private void Start()
     {
@@ -47,62 +36,47 @@ public class IDHover : MonoBehaviour
         transform.rotation = Quaternion.Euler(initialRotation, 0, 0);
         transform.localScale = initialScale;
 
-        currentPosition = initialPosition;
-        currentRotation = initialRotation;
-        currentScale = initialScale;
-
         // Configure audio source
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
         audioSource.loop = false;
 
-        // Get the Box Collider but leave it disabled initially
+        // Make sure the target script is initially disabled
+        if (scriptToActivate != null) scriptToActivate.enabled = false;
+
+        // Get and ensure the Box Collider is enabled
         boxCollider = GetComponent<BoxCollider>();
         if (boxCollider != null)
         {
-            boxCollider.enabled = false; // Disabled by default, should be enabled through an event
+            boxCollider.enabled = true; // Enabled by default
+            Debug.Log("IDHover: Box Collider found and enabled at start.");
         }
         else
         {
-            Debug.LogWarning("No BoxCollider found on this object.");
-        }
-
-        // Store sprite's initial position
-        if (targetSprite != null)
-        {
-            spriteInitialPosition = targetSprite.transform.position;
+            Debug.LogError("IDHover: No Box Collider found on this object.");
         }
     }
 
     private void Update()
     {
-        // Determine target values
-        Vector3 targetPos = initialPosition;
-        float targetRot = initialRotation;
-        Vector3 targetSc = initialScale;
+        if (hasMovedToFinalPosition) return;
 
         if (isClicked)
         {
-            targetSc = clickScale;
+            transform.localScale = Vector3.Lerp(transform.localScale, clickScale, Time.deltaTime * 10);
         }
         else if (isHovered)
         {
-            targetPos = targetPosition;
-            targetRot = targetRotation;
-            targetSc = targetScale;
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 5);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(targetRotation, 0, 0), Time.deltaTime * 5);
+            transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * 5);
         }
-
-        // Smooth position
-        currentPosition = Vector3.SmoothDamp(currentPosition, targetPos, ref positionVelocity, smoothTime, Mathf.Infinity, Time.deltaTime);
-        transform.position = currentPosition;
-
-        // Smooth rotation
-        currentRotation = Mathf.SmoothDampAngle(currentRotation, targetRot, ref rotationVelocity, smoothTime, Mathf.Infinity, Time.deltaTime);
-        transform.rotation = Quaternion.Euler(currentRotation, 0, 0);
-
-        // Smooth scale
-        currentScale = Vector3.SmoothDamp(currentScale, targetSc, ref scaleVelocity, smoothTime, Mathf.Infinity, Time.deltaTime);
-        transform.localScale = currentScale;
+        else
+        {
+            transform.position = Vector3.Lerp(transform.position, initialPosition, Time.deltaTime * 5);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(initialRotation, 0, 0), Time.deltaTime * 5);
+            transform.localScale = Vector3.Lerp(transform.localScale, initialScale, Time.deltaTime * 5);
+        }
     }
 
     private void OnMouseEnter()
@@ -154,10 +128,15 @@ public class IDHover : MonoBehaviour
     {
         isClicked = false;
 
-        // Instantly move the sprite
-        if (targetSprite != null)
+        // Instantly move to Y = 20 and stay there
+        transform.position = new Vector3(transform.position.x, 20, transform.position.z);
+        hasMovedToFinalPosition = true;
+
+        // Activate the specified script if set
+        if (scriptToActivate != null)
         {
-            targetSprite.transform.position = spriteTargetPosition;
+            scriptToActivate.enabled = true;
+            Debug.Log("IDHover: Script activated.");
         }
     }
 
@@ -178,12 +157,20 @@ public class IDHover : MonoBehaviour
         fadeOutCoroutine = null;
     }
 
-    // This method can be called through the Dialogue Editor to enable the collider
+    // Method to enable the collider externally (through Dialogue Editor)
     public void EnableCollider()
     {
-        if (boxCollider != null)
+        if (boxCollider == null)
         {
-            boxCollider.enabled = true;
+            boxCollider = GetComponent<BoxCollider>();
+            if (boxCollider == null)
+            {
+                Debug.LogError("IDHover: Attempted to enable collider, but it does not exist.");
+                return;
+            }
         }
+
+        boxCollider.enabled = true;
+        Debug.Log("IDHover: Box Collider is already enabled or has been enabled.");
     }
 }

@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.Events;
 
 public class HoverEffect : MonoBehaviour
 {
@@ -41,7 +40,7 @@ public class HoverEffect : MonoBehaviour
         // Make sure the target scripts are initially disabled
         DisableScripts();
 
-        // Get and enable the 2D Box Collider immediately
+        // Get and enable the 2D Box Collider
         boxCollider2D = GetComponent<BoxCollider2D>();
         if (boxCollider2D != null)
         {
@@ -105,6 +104,7 @@ public class HoverEffect : MonoBehaviour
     private void OnMouseDown()
     {
         isClicked = true;
+
         if (clickSound != null)
         {
             audioSource.PlayOneShot(clickSound);
@@ -125,12 +125,15 @@ public class HoverEffect : MonoBehaviour
 
         // Activate the specified scripts
         EnableScripts();
+
+        // Return to original scale after click
+        transform.localScale = initialScale;
     }
 
     private IEnumerator ResetToNormalScale()
     {
         yield return new WaitForSeconds(0.1f); // Small delay for smooth transition
-        isHovered = false; // This will smoothly scale it back to 1
+        isHovered = false; // Smoothly scale it back to original size
     }
 
     private void EnableScripts()
