@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections; // Ensure this is included
+using System.Collections; 
 
 [RequireComponent(typeof(Renderer))]
 public class SmoothMoveFade : MonoBehaviour
@@ -17,7 +17,6 @@ public class SmoothMoveFade : MonoBehaviour
         initialPosition = transform.position;
         planeRenderer = GetComponent<Renderer>();
 
-        // Set initial opacity to 0
         initialColor = planeRenderer.material.color;
         initialColor.a = 0f;
         planeRenderer.material.color = initialColor;
@@ -27,17 +26,16 @@ public class SmoothMoveFade : MonoBehaviour
 
     private IEnumerator MoveAndFade()
     {
-        // Smoothly move to target position
+        
         while (Vector3.Distance(transform.position, targetPosition) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
             yield return null;
         }
 
-        // Ensure it reaches the exact target
         transform.position = targetPosition;
 
-        // Start fade-in after reaching the target
+        
         float elapsedTime = 0f;
         Color finalColor = initialColor;
         finalColor.a = 1f;

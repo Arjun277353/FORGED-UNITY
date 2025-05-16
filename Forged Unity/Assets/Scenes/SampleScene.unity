@@ -1808,8 +1808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a31854c68857448b19dc72e7c16e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textureWidth: 600
-  textureHeight: 480
+  textureWidth: 300
+  textureHeight: 240
   brushSize: 3
   drawColor: {r: 0, g: 0, b: 0, a: 1}
   spacing: 1
@@ -2794,8 +2794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a31854c68857448b19dc72e7c16e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textureWidth: 600
-  textureHeight: 480
+  textureWidth: 300
+  textureHeight: 240
   brushSize: 3
   drawColor: {r: 0, g: 0, b: 0, a: 1}
   spacing: 1
@@ -3347,8 +3347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a31854c68857448b19dc72e7c16e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textureWidth: 600
-  textureHeight: 480
+  textureWidth: 300
+  textureHeight: 240
   brushSize: 3
   drawColor: {r: 0, g: 0, b: 0, a: 1}
   spacing: 1
@@ -3768,7 +3768,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ee7e5117cc4bc51419a8d88d9e9c0c86, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.654088, g: 0.654088, b: 0.654088, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7497,8 +7497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a31854c68857448b19dc72e7c16e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textureWidth: 600
-  textureHeight: 480
+  textureWidth: 300
+  textureHeight: 240
   brushSize: 3
   drawColor: {r: 0, g: 0, b: 0, a: 1}
   spacing: 1

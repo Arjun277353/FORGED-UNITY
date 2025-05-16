@@ -2,32 +2,32 @@ using UnityEngine;
 
 public class CloseEnable : MonoBehaviour
 {
-    public Animator targetAnimator; // The animator on CloseShutter
+    public Animator targetAnimator; 
     private Collider2D triggerCollider;
 
     [Header("Smooth Move and Fade Settings")]
-    [SerializeField] private SmoothMoveFade moveFadeScript; // The SmoothMoveFade script on your 3D plane
+    [SerializeField] private SmoothMoveFade moveFadeScript; 
 
     void Start()
     {
         triggerCollider = GetComponent<Collider2D>();
         if (triggerCollider != null)
         {
-            triggerCollider.enabled = false; // Disable by default
+            triggerCollider.enabled = false; 
         }
         else
         {
             Debug.LogWarning("No Collider2D found on this object.");
         }
 
-        // Ensure the move fade script is disabled initially
+        
         if (moveFadeScript != null)
         {
             moveFadeScript.enabled = false;
         }
     }
 
-    // Method to enable the trigger (called from Dialogue Editor)
+    
     public void EnableTrigger()
     {
         if (triggerCollider != null)
@@ -51,7 +51,7 @@ public class CloseEnable : MonoBehaviour
                 Debug.LogWarning("Target Animator is not assigned.");
             }
 
-            // Activate the SmoothMoveFade script
+            
             if (moveFadeScript != null)
             {
                 moveFadeScript.enabled = true;

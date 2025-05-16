@@ -3,12 +3,12 @@ using System.Collections;
 
 public class HoverEffect : MonoBehaviour
 {
-    // Visual Effect Targets
+    
     private Vector3 initialScale = Vector3.one;
     private Vector3 hoverScale = Vector3.one * 1.2f;
     private Vector3 clickScale = Vector3.one * 0.8f;
 
-    // Audio Settings
+    
     [SerializeField] private AudioClip hoverSound;
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private float fadeOutTime = 0.1f;
@@ -17,30 +17,30 @@ public class HoverEffect : MonoBehaviour
     private bool isClicked = false;
     private Coroutine fadeOutCoroutine;
 
-    // Event Triggers (Up to 5 scripts)
+    
     [SerializeField] private MonoBehaviour scriptToActivate1;
     [SerializeField] private MonoBehaviour scriptToActivate2;
     [SerializeField] private MonoBehaviour scriptToActivate3;
     [SerializeField] private MonoBehaviour scriptToActivate4;
     [SerializeField] private MonoBehaviour scriptToActivate5;
 
-    // 2D Box Collider Reference
+    
     private BoxCollider2D boxCollider2D;
 
     private void Start()
     {
-        // Set initial visual state
+        
         transform.localScale = initialScale;
 
-        // Configure audio source
+        
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
         audioSource.loop = false;
 
-        // Make sure the target scripts are initially disabled
+        
         DisableScripts();
 
-        // Get and enable the 2D Box Collider
+        
         boxCollider2D = GetComponent<BoxCollider2D>();
         if (boxCollider2D != null)
         {
@@ -54,7 +54,7 @@ public class HoverEffect : MonoBehaviour
 
     private void Update()
     {
-        // Smoothly adjust the scale based on hover and click state
+        
         if (isClicked)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, clickScale, Time.deltaTime * 10);
@@ -110,7 +110,7 @@ public class HoverEffect : MonoBehaviour
             audioSource.PlayOneShot(clickSound);
         }
 
-        // Disable the 2D BoxCollider immediately
+        
         if (boxCollider2D != null)
         {
             boxCollider2D.enabled = false;
@@ -120,20 +120,20 @@ public class HoverEffect : MonoBehaviour
     private void OnMouseUp()
     {
         isClicked = false;
-        isHovered = true; // Briefly back to hover scale
+        isHovered = true; 
         StartCoroutine(ResetToNormalScale());
 
-        // Activate the specified scripts
+        
         EnableScripts();
 
-        // Return to original scale after click
+        
         transform.localScale = initialScale;
     }
 
     private IEnumerator ResetToNormalScale()
     {
-        yield return new WaitForSeconds(0.1f); // Small delay for smooth transition
-        isHovered = false; // Smoothly scale it back to original size
+        yield return new WaitForSeconds(0.1f); 
+        isHovered = false; 
     }
 
     private void EnableScripts()

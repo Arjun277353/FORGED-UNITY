@@ -11,7 +11,7 @@ public class HitboxCollision : MonoBehaviour
     public BoxCollider2D checkbox3;
     public GameObject button;
 
-    [SerializeField] private float holdDuration = 3f; // Adjustable hold time
+    [SerializeField] private float holdDuration = 3f; 
 
     private float holdTime = 0f;
     private bool checkbox1Triggered = false;

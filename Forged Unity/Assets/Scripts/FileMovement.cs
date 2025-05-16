@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class InstantMoveAndFadeIn : MonoBehaviour
 {
-    [SerializeField] private float targetY = 5f; // Target Y position
-    [SerializeField] private float fadeDuration = 1f; // Duration for fade-in effect
+    [SerializeField] private float targetY = 5f; 
+    [SerializeField] private float fadeDuration = 1f; 
     private SpriteRenderer spriteRenderer;
     private bool hasMoved = false;
 
@@ -16,7 +16,7 @@ public class InstantMoveAndFadeIn : MonoBehaviour
             return;
         }
 
-        // Set initial opacity to 0 (completely transparent)
+        
         Color startColor = spriteRenderer.color;
         startColor.a = 0f;
         spriteRenderer.color = startColor;
@@ -26,11 +26,11 @@ public class InstantMoveAndFadeIn : MonoBehaviour
     {
         if (!hasMoved)
         {
-            // Instantly move the object to target Y position
+            
             transform.position = new Vector3(transform.position.x, targetY, transform.position.z);
             hasMoved = true;
 
-            // Start reverse fade-in
+            
             StartCoroutine(FadeIn());
         }
     }
@@ -40,7 +40,7 @@ public class InstantMoveAndFadeIn : MonoBehaviour
         float elapsedTime = 0f;
         Color startColor = spriteRenderer.color;
         Color targetColor = startColor;
-        targetColor.a = 1f; // Fully opaque
+        targetColor.a = 1f; 
 
         while (elapsedTime < fadeDuration)
         {
@@ -49,7 +49,7 @@ public class InstantMoveAndFadeIn : MonoBehaviour
             yield return null;
         }
 
-        spriteRenderer.color = targetColor; // Ensure it's fully visible at the end
-        this.enabled = false; // Disable the script after fading in
+        spriteRenderer.color = targetColor; 
+        this.enabled = false; 
     }
 }
