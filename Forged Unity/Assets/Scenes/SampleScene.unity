@@ -3767,7 +3767,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cbfe90edd9999344d92436ac00914425, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee7e5117cc4bc51419a8d88d9e9c0c86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3827,17 +3827,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.23557615, y: -0.408813}
+  m_Offset: {x: -0.002910614, y: -1.1104712}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 6.264, y: 6.264}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.6488476, y: 3.5390491}
+  m_Size: {x: 4.090537, y: 4.626192}
   m_EdgeRadius: 0
 --- !u!114 &1085020934
 MonoBehaviour:
@@ -6637,7 +6637,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46483883acadd9840b22c2becb286c12, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 740b35ed7b3657b4fb689d613422c218, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6715,8 +6715,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Size: {x: 5.12, y: 5.12, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.803926, y: 2.6525536, z: 0.2}
+  m_Center: {x: 0.36757827, y: -0.4937706, z: -0.00002689662}
 --- !u!1 &1828606497
 GameObject:
   m_ObjectHideFlags: 0
@@ -7305,7 +7305,7 @@ GameObject:
   - component: {fileID: 1875653035}
   - component: {fileID: 1875653036}
   m_Layer: 0
-  m_Name: idplaceholder
+  m_Name: IDCARD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7442,7 +7442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetXInitial: 0
   targetXFinal: 100
-  delaySeconds: 8
+  delaySeconds: 4
   scriptToActivate: {fileID: 1085020934}
 --- !u!1 &1887419079
 GameObject:
