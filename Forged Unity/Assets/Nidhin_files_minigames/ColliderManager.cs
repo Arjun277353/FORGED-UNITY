@@ -11,6 +11,8 @@ public class HitboxCollision : MonoBehaviour
     public BoxCollider2D checkbox3;
     public GameObject button;
 
+    [SerializeField] private float holdDuration = 3f; // Adjustable hold time
+
     private float holdTime = 0f;
     private bool checkbox1Triggered = false;
     private bool checkbox2Triggered = false;
@@ -22,6 +24,7 @@ public class HitboxCollision : MonoBehaviour
     {
         tick1.SetActive(false);
         tick2.SetActive(false);
+        button.SetActive(false);
     }
 
     void Update()
@@ -36,7 +39,6 @@ public class HitboxCollision : MonoBehaviour
                 tick1.SetActive(true);
                 checkbox1Triggered = true;
             }
-
             else if (checkbox2.OverlapPoint(mouseWorldPos))
             {
                 Debug.Log("Checkbox 2 clicked\nEnabling TickBox 2");
@@ -51,10 +53,10 @@ public class HitboxCollision : MonoBehaviour
             {
                 holdTime += Time.deltaTime;
 
-                if (!checkbox3Triggered && holdTime >= 3f)
+                if (!checkbox3Triggered && holdTime >= holdDuration)
                 {
                     checkbox3Triggered = true;
-                    Debug.Log("Checkbox 3 held for 3 seconds!");
+                    Debug.Log($"Checkbox 3 held for {holdDuration} seconds!");
                     OnCheckbox3HoldComplete();
                 }
             }

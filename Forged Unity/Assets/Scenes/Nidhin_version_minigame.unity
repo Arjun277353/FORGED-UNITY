@@ -1046,6 +1046,7 @@ MonoBehaviour:
   tick2: {fileID: 498180183}
   checkbox3: {fileID: 135021425}
   button: {fileID: 1566615691}
+  holdDuration: 1
 --- !u!4 &2036617231
 Transform:
   m_ObjectHideFlags: 0
