@@ -11,7 +11,7 @@ public class HitboxCollision : MonoBehaviour
     public BoxCollider2D checkbox3;
     public GameObject button;
 
-    [SerializeField] private float holdDuration = 3f; 
+    [SerializeField] private float holdDuration = 3f;
 
     private float holdTime = 0f;
     private bool checkbox1Triggered = false;
@@ -20,11 +20,20 @@ public class HitboxCollision : MonoBehaviour
 
     public bool allCheckboxesChecked => checkbox1Triggered && checkbox2Triggered && checkbox3Triggered;
 
+    [Header("Object To Move On Complete")]
+    [SerializeField] private Transform objectToMove;
+    [SerializeField] private Vector3 targetPosition = new Vector3(2f, 1.5f, 8f);
+    private bool hasMoved = false;
+
     private void Start()
     {
         tick1.SetActive(false);
         tick2.SetActive(false);
         button.SetActive(false);
+
+        // Optionally disable the object at start
+        if (objectToMove != null)
+            objectToMove.gameObject.SetActive(false);
     }
 
     void Update()
@@ -70,9 +79,15 @@ public class HitboxCollision : MonoBehaviour
             holdTime = 0f;
         }
 
-        if (allCheckboxesChecked)
+        if (allCheckboxesChecked && !hasMoved)
         {
             Debug.Log("All checkboxes are triggered!");
+
+            // Enable the object before moving it
+            objectToMove.gameObject.SetActive(true);
+
+            objectToMove.position = targetPosition;
+            hasMoved = true;
         }
     }
 
