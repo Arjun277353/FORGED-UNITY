@@ -3717,7 +3717,7 @@ GameObject:
   - component: {fileID: 1085020933}
   - component: {fileID: 1085020934}
   m_Layer: 0
-  m_Name: print-icon--universal-shop-iconset--aha-soft-29
+  m_Name: Printer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5867,20 +5867,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 16
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":195.333313,\"yPos\":350.333679},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Show
-    me your documents\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":422.6666,\"yPos\":427.9994},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Read
-    Documents*\",\"parentUIDs\":[2],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-0.332672119,\"yPos\":103.666656},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Its
-    Gonna Cost You\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":667.000732,\"yPos\":88.3334656},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dont
-    waste my time old man (END)\",\"parentUIDs\":[7,10],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":418.33313,\"yPos\":172.333527},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'll
-    need more\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":425.666382,\"yPos\":248.999908},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sure,
-    Hand it Over\",\"parentUIDs\":[10],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":204.3331,\"yPos\":173.000031},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"ok
-    sure\",\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-236.000092,\"yPos\":87.33333},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Please\u2026
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":320.8335,\"yPos\":544.000366},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Show
+    me your documents\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":585.166748,\"yPos\":623.6661},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Read
+    Documents*\",\"parentUIDs\":[2],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":162.16748,\"yPos\":299.3333},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Its
+    Gonna Cost You\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":829.500854,\"yPos\":284.000122},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dont
+    waste my time old man (END)\",\"parentUIDs\":[7,10],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":580.833252,\"yPos\":368.000183},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'll
+    need more\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":588.1665,\"yPos\":444.666565},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sure,
+    Hand it Over\",\"parentUIDs\":[10],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":366.833252,\"yPos\":368.6667},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"ok
+    sure\",\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-73.5,\"yPos\":283},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Please\u2026
     I need papers. There\u2019s a camp outside the city with cholera\u2014they won\u2019t
-    let me in without a blue-stamped medical pass.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":429.333527,\"yPos\":325.999817},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
+    let me in without a blue-stamped medical pass.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":591.8336,\"yPos\":521.6665},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
     I\u2019m caught, the sick children in that camp will die. Their only water source
-    is contaminated.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":263.000366,\"yPos\":82},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    can only pay half, but i have some antibiotics with me\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":679.668945,\"yPos\":194.000122},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    Can give you this Silver Pendant\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":197.000061,\"yPos\":245.999786},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Thank
+    is contaminated.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":425.5005,\"yPos\":277.6667},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    can only pay half, but i have some antibiotics with me\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":842.169067,\"yPos\":389.6668},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    Can give you this Silver Pendant\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":359.500244,\"yPos\":441.666443},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Thank
     you for helping me\",\"parentUIDs\":[11,13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -5904,21 +5904,9 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1856547782}
-        m_TargetAssemblyTypeName: DocumentHoverController, Assembly-CSharp
-        m_MethodName: EnableHoverOnDocument
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1806009417}
-        m_TargetAssemblyTypeName: IDHover, Assembly-CSharp
-        m_MethodName: EnableCollider
+      - m_Target: {fileID: 358914864}
+        m_TargetAssemblyTypeName: CloseEnable, Assembly-CSharp
+        m_MethodName: EnableTrigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
