@@ -1901,7 +1901,7 @@ MonoBehaviour:
   checkbox3: {fileID: 564071976}
   button: {fileID: 1168971821}
   holdDuration: 1
-  objectToMove: {fileID: 0}
+  objectToMove: {fileID: 1168971823}
   targetPosition: {x: 2, y: 1.5, z: 8}
 --- !u!1 &452963542
 GameObject:
