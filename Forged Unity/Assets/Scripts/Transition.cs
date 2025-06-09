@@ -51,6 +51,6 @@ public class SmoothMoveFade : MonoBehaviour
         planeRenderer.material.color = finalColor; // Ensure final color is exact
 
         // Everything is done, now change scene
-        //SceneManager.LoadScene("Ending News");
+        SceneManager.LoadScene("Ending News");
     }
 }
