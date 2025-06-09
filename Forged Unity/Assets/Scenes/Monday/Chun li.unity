@@ -1068,7 +1068,7 @@ MonoBehaviour:
   checkbox2: {fileID: 1571875462}
   tick2: {fileID: 1326863048}
   checkbox3: {fileID: 1866391319}
-  button: {fileID: 0}
+  button: {fileID: 1168971821}
   holdDuration: 1
   objectToMove: {fileID: 1168971823}
   targetPosition: {x: 2, y: 1.5, z: 8}
@@ -2987,7 +2987,7 @@ MonoBehaviour:
   checkbox2: {fileID: 190453911}
   tick2: {fileID: 383406179}
   checkbox3: {fileID: 637712930}
-  button: {fileID: 0}
+  button: {fileID: 1168971821}
   holdDuration: 1
   objectToMove: {fileID: 1168971823}
   targetPosition: {x: 2, y: 1.5, z: 8}
@@ -5710,9 +5710,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":467.5,"yPos":339},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Hand
-    over Documents","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":466.166656,"yPos":535},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"*END*","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":469.5,"yPos":242},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
-    you go ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":469.166656,"yPos":426},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":83.66666,"yPos":119},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Hand
+    over Documents","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":82.33331,"yPos":315.000031},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"*END*","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":85.66666,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
+    you go ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":85.33331,"yPos":206.000031},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
     you sir for the documents ","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -5727,7 +5727,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1860551708}
+        m_TargetAssemblyTypeName: MoveCharacterBlockerEvent, Assembly-CSharp
+        m_MethodName: TriggerBlockerMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1336363445
 Transform:
   m_ObjectHideFlags: 0
@@ -5951,7 +5963,7 @@ MonoBehaviour:
   checkbox2: {fileID: 1131730395}
   tick2: {fileID: 1457908965}
   checkbox3: {fileID: 1869480238}
-  button: {fileID: 0}
+  button: {fileID: 1168971821}
   holdDuration: 1
   objectToMove: {fileID: 1168971823}
   targetPosition: {x: 2, y: 1.5, z: 8}
@@ -6271,7 +6283,7 @@ Transform:
   m_GameObject: {fileID: 1504255252}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -60.9, y: 0, z: 0}
+  m_LocalPosition: {x: -13.24, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6570,22 +6582,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 18
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":596.6655,"yPos":-50.33316},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I''ll
-    get your papers done right away, hand me your documents.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":595.998657,"yPos":134.33313},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Another
-    dying mom huh ? Hand me the documents, I''ll get you through.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1168.9989,"yPos":35},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Show
-    me your documents !","parentUIDs":[2,14],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":-123.666656,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":69.9988251,"yPos":165.66687},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I''ll
+    get your papers done right away, hand me your documents.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":69.331955,"yPos":350.33316},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Another
+    dying mom huh ? Hand me the documents, I''ll get you through.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":642.332153,"yPos":251.000031},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Show
+    me your documents !","parentUIDs":[2,14],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":-650.3335,"yPos":238.000031},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
     sir, my mom said to give this to you and ask for papers and give document. Also
     pay you with everything she gave me *hands letter*\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":879.332153,"yPos":-56.66684},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"
+    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":352.665466,"yPos":159.333191},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"
     yaaayyyy!!!!","parentUIDs":[9,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":122.333649,"yPos":24.3333435},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
+    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-404.333374,"yPos":240.333374},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
     May, we have lost everything and I am dying from salt lung, I dont want my kid
     to bare me dying in her hands. Could you do me a favor and get her inside ?\n\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":374.334747,"yPos":25.3334656},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"We
+    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-152.331863,"yPos":241.3335},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"We
     read about an orphanage for refugees she''ll make her way thru it. I have given
     her more than enough freshwater and money for the payment Just get her inside
     please","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":887.332764,"yPos":117.3331},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"*sobbing*","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
+    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":360.665955,"yPos":333.33313},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"*sobbing*","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
     Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -6606,45 +6618,9 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1806009414}
-        m_TargetAssemblyTypeName: MoveDocumentEvent, Assembly-CSharp
-        m_MethodName: TriggerDocumentMovement
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1071556601}
-        m_TargetAssemblyTypeName: PlaySoundEvent, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1856547782}
-        m_TargetAssemblyTypeName: DocumentHoverController, Assembly-CSharp
-        m_MethodName: EnableHoverOnDocument
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1806009417}
-        m_TargetAssemblyTypeName: IDHover, Assembly-CSharp
-        m_MethodName: EnableCollider
+      - m_Target: {fileID: 1972805778}
+        m_TargetAssemblyTypeName: MoveCharacterBlockerEvent, Assembly-CSharp
+        m_MethodName: TriggerBlockerMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8693,7 +8669,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.16666666, y: -10.183332, z: -19.533333}
-  m_LocalScale: {x: 1.6666665, y: 1.6666665, z: 1.6666665}
+  m_LocalScale: {x: 1.39, y: 2.29, z: 1.6666665}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1122570720}
