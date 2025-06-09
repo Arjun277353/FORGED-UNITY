@@ -3,7 +3,7 @@ using UnityEngine;
 public class FadeOutTrigger : MonoBehaviour
 {
   [Header("Smooth Move and Fade Settings")]
-    [SerializeField] private SmoothMoveFade moveFadeScript;
+    [SerializeField] private SmoothMoveFade2 moveFadeScript;
 
     void Start()
     {
