@@ -27,7 +27,21 @@ public class CloseEnable : MonoBehaviour
         }
     }
 
-    
+    private void Update()
+    {
+        if (moveFadeScript != null)
+        {
+            moveFadeScript.enabled = true;
+            Debug.Log("SmoothMoveFade script activated.");
+        }
+        else
+        {
+            Debug.LogWarning("MoveFade script is not assigned.");
+        }
+    }
+
+    /* 
+    //Im not deleting anything in case yall wanna use the button in the future
     public void EnableTrigger()
     {
         if (triggerCollider != null)
@@ -52,15 +66,7 @@ public class CloseEnable : MonoBehaviour
             }
 
             
-            if (moveFadeScript != null)
-            {
-                moveFadeScript.enabled = true;
-                Debug.Log("SmoothMoveFade script activated.");
-            }
-            else
-            {
-                Debug.LogWarning("MoveFade script is not assigned.");
-            }
+            
         }
-    }
+    }*/
 }
