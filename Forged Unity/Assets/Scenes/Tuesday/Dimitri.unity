@@ -378,10 +378,9 @@ GameObject:
   - component: {fileID: 97154822}
   - component: {fileID: 97154821}
   - component: {fileID: 97154820}
-  - component: {fileID: 97154819}
   - component: {fileID: 97154818}
   - component: {fileID: 97154817}
-  - component: {fileID: 97154816}
+  - component: {fileID: 97154826}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -404,25 +403,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1736517868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &97154816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97154814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 19
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
-  Audio: {fileID: 0}
 --- !u!114 &97154817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,25 +489,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &97154819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97154814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 14
-  TMPFont: {fileID: 0}
-  Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
-  Audio: {fileID: 0}
 --- !u!114 &97154820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,7 +525,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 10
   TMPFont: {fileID: 0}
-  Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
+  Icon: {fileID: 1897253184, guid: 20e8f8c13d153eb4ab9e7cbfbd5e0806, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &97154822
 MonoBehaviour:
@@ -602,7 +563,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 7
   TMPFont: {fileID: 0}
-  Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
+  Icon: {fileID: 1897253184, guid: 20e8f8c13d153eb4ab9e7cbfbd5e0806, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &97154824
 MonoBehaviour:
@@ -621,7 +582,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
+  Icon: {fileID: 1897253184, guid: 20e8f8c13d153eb4ab9e7cbfbd5e0806, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &97154825
 MonoBehaviour:
@@ -653,6 +614,25 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &97154826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97154814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 20
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1 &123616756
 GameObject:
@@ -7207,23 +7187,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 20
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":910.9989,"yPos":-48.9998474},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I''ll
-    get your papers done right away, hand me your documents.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":910.9988,"yPos":136.333069},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Another
-    dying mom huh ? Hand me the documents, I''ll get you through.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1483.999,"yPos":36.333313},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Show
-    me your documents !","parentUIDs":[2,14],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":true,"xPos":89.33334,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
-    sir, my mom said to give this to you and ask for papers and give document. Also
-    pay you with everything she gave me *hands letter*\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":1194.33228,"yPos":-55.3335266},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"
-    yaaayyyy!!!!","parentUIDs":[9,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":437.333679,"yPos":25.6666565},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
-    May, we have lost everything and I am dying from salt lung, I dont want my kid
-    to bare me dying in her hands. Could you do me a favor and get her inside ?\n\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":689.334839,"yPos":26.6667786},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"We
-    read about an orphanage for refugees she''ll make her way thru it. I have given
-    her more than enough freshwater and money for the payment Just get her inside
-    please","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":1202.333,"yPos":118.666443},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"*sobbing*","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":90.33339,"yPos":151.333328},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 21
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-238.334473,"yPos":219.000122},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
+    even are you??","parentUIDs":[7],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":-7.33459473,"yPos":493.333069},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"payment
+    please","parentUIDs":[7],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":532.665649,"yPos":453.3333},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"alright
+    alright please be calm!","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":8.5,"yPos":372},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"ok
+    ok just pay or aunt will not like it  ","parentUIDs":[10],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":-713,"yPos":417},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Sup\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":241.9989,"yPos":431.6665},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    must be new here just get it done kid.","parentUIDs":[11,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":-480.999634,"yPos":418.666626},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Make
+    me my documents real quick\n\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":-204.998535,"yPos":355.666748},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    i dont get in you are done for kid","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Dimitri
   DefaultSprite: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
@@ -7235,15 +7207,62 @@ MonoBehaviour:
   - {fileID: 97154822}
   - {fileID: 97154821}
   - {fileID: 97154820}
-  - {fileID: 97154819}
   - {fileID: 97154818}
   - {fileID: 97154817}
-  - {fileID: 97154816}
+  - {fileID: 97154826}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MoveDocumentEvent, Assembly-CSharp
+        m_MethodName: TriggerDocumentMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlaySoundEvent, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DocumentHoverController, Assembly-CSharp
+        m_MethodName: EnableHoverOnDocument
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: IDHover, Assembly-CSharp
+        m_MethodName: EnableCollider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1781099168
 GameObject:
   m_ObjectHideFlags: 0
