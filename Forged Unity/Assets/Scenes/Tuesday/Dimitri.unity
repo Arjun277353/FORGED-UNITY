@@ -525,7 +525,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 10
   TMPFont: {fileID: 0}
-  Icon: {fileID: 1897253184, guid: 20e8f8c13d153eb4ab9e7cbfbd5e0806, type: 3}
+  Icon: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &97154822
 MonoBehaviour:
@@ -563,7 +563,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 7
   TMPFont: {fileID: 0}
-  Icon: {fileID: 1897253184, guid: 20e8f8c13d153eb4ab9e7cbfbd5e0806, type: 3}
+  Icon: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &97154824
 MonoBehaviour:
@@ -582,7 +582,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 1897253184, guid: 20e8f8c13d153eb4ab9e7cbfbd5e0806, type: 3}
+  Icon: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &97154825
 MonoBehaviour:
@@ -7188,14 +7188,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 21
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-238.334473,"yPos":219.000122},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
-    even are you??","parentUIDs":[7],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":-7.33459473,"yPos":493.333069},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"payment
-    please","parentUIDs":[7],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":532.665649,"yPos":453.3333},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"alright
-    alright please be calm!","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":8.5,"yPos":372},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"ok
-    ok just pay or aunt will not like it  ","parentUIDs":[10],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":-713,"yPos":417},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Sup\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":241.9989,"yPos":431.6665},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    must be new here just get it done kid.","parentUIDs":[11,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":-480.999634,"yPos":418.666626},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Make
-    me my documents real quick\n\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":-204.998535,"yPos":355.666748},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"If
-    i dont get in you are done for kid","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":511.998474,"yPos":17.33342},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
+    even are you??","parentUIDs":[7],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":742.9995,"yPos":291.666351},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"payment
+    please","parentUIDs":[7],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1282.99707,"yPos":251.6666},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"alright
+    alright please be calm!","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":758.8341,"yPos":170.333313},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"ok
+    ok ! Just pay or aunt will not like it","parentUIDs":[10],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":37.3334351,"yPos":215.333282},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Sup\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":992.332642,"yPos":229.999817},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    must be new here. Just get it done kid.","parentUIDs":[11,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":269.3339,"yPos":216.999939},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Make
+    me my documents real quick\n\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":532.0011,"yPos":136.666718},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    i dont get in, you are done for kid","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Dimitri
   DefaultSprite: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
@@ -7214,55 +7214,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MoveDocumentEvent, Assembly-CSharp
-        m_MethodName: TriggerDocumentMovement
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlaySoundEvent, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DocumentHoverController, Assembly-CSharp
-        m_MethodName: EnableHoverOnDocument
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IDHover, Assembly-CSharp
-        m_MethodName: EnableCollider
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1781099168
 GameObject:
   m_ObjectHideFlags: 0

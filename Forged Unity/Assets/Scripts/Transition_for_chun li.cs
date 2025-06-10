@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 
 [RequireComponent(typeof(Renderer))]
-public class SmoothMoveFade2 : MonoBehaviour
+public class SmoothMoveFadeChunLi : MonoBehaviour
 {
     [SerializeField] private Vector3 targetPosition = new Vector3(0, 5, 0);
     [SerializeField] private float moveSpeed = 2f;
@@ -50,6 +50,7 @@ public class SmoothMoveFade2 : MonoBehaviour
 
         planeRenderer.material.color = finalColor; // Ensure final color is exact
 
-
+        // Everything is done, now change scene
+        SceneManager.LoadScene("Ending News");
     }
 }
