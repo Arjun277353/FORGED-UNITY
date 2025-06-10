@@ -4287,8 +4287,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1126812515}
   - component: {fileID: 1126812517}
-  - component: {fileID: 1126812526}
   - component: {fileID: 1126812528}
+  - component: {fileID: 1126812529}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -4340,26 +4340,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1126812526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126812513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 7
-  TMPFont: {fileID: 0}
-  Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
+  Icon: {fileID: -2000925348, guid: 8b6a6aa71b9f1174dae701c43ed98201, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1126812528
 MonoBehaviour:
@@ -4377,6 +4358,25 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 5
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1126812529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 7
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -6401,19 +6401,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 18
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":159.666687,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":36,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
     sir, my mom said to give this to you and ask for papers and give document. Also
-    pay you with everything she gave me *hands letter*\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":404.333557,"yPos":23.666626},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
-    May, we have lost everything and I am dying from salt lung, I dont want my kid
-    to bare me dying in her hands. Could you do me a favor and get her inside ?\n\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dmitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    pay you with everything she gave me *hands letter*\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Bo
+    Tran ","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
-  DefaultName: Dimitri
-  DefaultSprite: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
+  DefaultName: Bo Tran
+  DefaultSprite: {fileID: -2000925348, guid: 8b6a6aa71b9f1174dae701c43ed98201, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 1126812517}
-  - {fileID: 1126812526}
   - {fileID: 1126812528}
+  - {fileID: 1126812529}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:

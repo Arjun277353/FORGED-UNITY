@@ -638,7 +638,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1972805778}
         m_TargetAssemblyTypeName: MoveCharacterBlockerEvent, Assembly-CSharp
         m_MethodName: TriggerBlockerMovement
         m_Mode: 1
@@ -4479,12 +4479,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 87042825, guid: 1eec9866a3317584688eb6ffed6439a7, type: 3}
+  m_Sprite: {fileID: 1897253184, guid: 20e8f8c13d153eb4ab9e7cbfbd5e0806, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.2, y: 10.2}
+  m_Size: {x: 6.97, y: 9.15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4547,8 +4547,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.81, y: 8.98}
-    newSize: {x: 10.2, y: 10.2}
+    oldSize: {x: 6.97, y: 9.15}
+    newSize: {x: 6.97, y: 9.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6193,8 +6193,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.81, y: 8.98}
-    newSize: {x: 10.2, y: 10.2}
+    oldSize: {x: 6.97, y: 9.15}
+    newSize: {x: 6.97, y: 9.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6258,12 +6258,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 87042825, guid: 1eec9866a3317584688eb6ffed6439a7, type: 3}
+  m_Sprite: {fileID: 1897253184, guid: 20e8f8c13d153eb4ab9e7cbfbd5e0806, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.2, y: 10.2}
+  m_Size: {x: 6.97, y: 9.15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7208,22 +7208,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 20
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":871.99884,"yPos":-48.9998474},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I''ll
-    get your papers done right away, hand me your documents.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":871.9987,"yPos":136.333069},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Another
-    dying mom huh ? Hand me the documents, I''ll get you through.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1444.999,"yPos":36.333313},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Show
-    me your documents !","parentUIDs":[2,14],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":true,"xPos":50.3333435,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":910.9989,"yPos":-48.9998474},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I''ll
+    get your papers done right away, hand me your documents.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":910.9988,"yPos":136.333069},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Another
+    dying mom huh ? Hand me the documents, I''ll get you through.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1483.999,"yPos":36.333313},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Show
+    me your documents !","parentUIDs":[2,14],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":true,"xPos":89.33334,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
     sir, my mom said to give this to you and ask for papers and give document. Also
-    pay you with everything she gave me *hands letter*\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":1155.33228,"yPos":-55.3335266},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"
+    pay you with everything she gave me *hands letter*\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":1194.33228,"yPos":-55.3335266},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"
     yaaayyyy!!!!","parentUIDs":[9,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":398.3335,"yPos":25.6666565},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
+    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":437.333679,"yPos":25.6666565},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
     May, we have lost everything and I am dying from salt lung, I dont want my kid
     to bare me dying in her hands. Could you do me a favor and get her inside ?\n\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":650.3349,"yPos":26.6667786},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"We
+    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":689.334839,"yPos":26.6667786},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"We
     read about an orphanage for refugees she''ll make her way thru it. I have given
     her more than enough freshwater and money for the payment Just get her inside
     please","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":1163.33276,"yPos":118.666443},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"*sobbing*","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":52.6666565,"yPos":165.333344},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":1202.333,"yPos":118.666443},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"*sobbing*","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
+    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":90.33339,"yPos":151.333328},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Dimitri
   DefaultSprite: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
