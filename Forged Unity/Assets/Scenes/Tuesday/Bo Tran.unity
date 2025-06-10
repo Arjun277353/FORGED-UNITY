@@ -828,7 +828,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2056623361, guid: d79ca88adc2e8ec45b176b726e5f1f78, type: 3}
+  m_Sprite: {fileID: 1892599736, guid: fe97805d74117214084e0beae4f63ff6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1222,7 +1222,6 @@ GameObject:
   - component: {fileID: 337048804}
   - component: {fileID: 337048806}
   - component: {fileID: 337048805}
-  - component: {fileID: 337048807}
   m_Layer: 0
   m_Name: Yellow
   m_TagString: Untagged
@@ -1389,18 +1388,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetY: 5
   fadeDuration: 2
---- !u!114 &337048807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337048800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecf40342e04c4064989da140a8e804a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &358914860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,7 +2480,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2056623361, guid: d79ca88adc2e8ec45b176b726e5f1f78, type: 3}
+  m_Sprite: {fileID: 1892599736, guid: fe97805d74117214084e0beae4f63ff6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4151,7 +4138,7 @@ GameObject:
   - component: {fileID: 1122570722}
   - component: {fileID: 1122570721}
   m_Layer: 0
-  m_Name: Chun li
+  m_Name: Bo Tran
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4201,7 +4188,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
+  m_Sprite: {fileID: -2000925348, guid: 671c7096008f61940805ae234111057a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4221,8 +4208,8 @@ Transform:
   m_GameObject: {fileID: 1122570718}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.55, y: 3.25, z: 11.72}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalPosition: {x: 0.43, y: 3.86, z: 11.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1540058126}
@@ -4269,7 +4256,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.7, y: 9.54}
+    oldSize: {x: 5.19, y: 8.8}
     newSize: {x: 10.2, y: 10.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4300,13 +4287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126812515}
   - component: {fileID: 1126812517}
-  - component: {fileID: 1126812514}
   - component: {fileID: 1126812526}
-  - component: {fileID: 1126812524}
-  - component: {fileID: 1126812523}
-  - component: {fileID: 1126812522}
-  - component: {fileID: 1126812520}
-  - component: {fileID: 1126812527}
   - component: {fileID: 1126812528}
   m_Layer: 0
   m_Name: ConversationEventInfo
@@ -4315,25 +4296,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1126812514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126812513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 2
-  TMPFont: {fileID: 0}
-  Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
-  Audio: {fileID: 0}
 --- !u!4 &1126812515
 Transform:
   m_ObjectHideFlags: 0
@@ -4380,82 +4342,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
   Audio: {fileID: 0}
---- !u!114 &1126812520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126812513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 14
-  TMPFont: {fileID: 0}
-  Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1126812522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126812513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 11
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &1126812523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126812513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 10
-  TMPFont: {fileID: 0}
-  Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1126812524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126812513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 9
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
 --- !u!114 &1126812526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4474,73 +4360,6 @@ MonoBehaviour:
   NodeID: 7
   TMPFont: {fileID: 0}
   Icon: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1126812527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126812513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1806009414}
-        m_TargetAssemblyTypeName: MoveDocumentEvent, Assembly-CSharp
-        m_MethodName: TriggerDocumentMovement
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1071556601}
-        m_TargetAssemblyTypeName: PlaySoundEvent, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1856547782}
-        m_TargetAssemblyTypeName: DocumentHoverController, Assembly-CSharp
-        m_MethodName: EnableHoverOnDocument
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1806009417}
-        m_TargetAssemblyTypeName: IDHover, Assembly-CSharp
-        m_MethodName: EnableCollider
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  NodeID: 16
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1126812528
 MonoBehaviour:
@@ -5170,7 +4989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToMove: {fileID: 1122570720}
-  targetX: 11.1
+  targetX: 13.55
 --- !u!114 &1224516420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6154,7 +5973,7 @@ GameObject:
   - component: {fileID: 1504255254}
   - component: {fileID: 1504255253}
   m_Layer: 0
-  m_Name: EndChun
+  m_Name: EndBoTran
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6198,7 +6017,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.7, y: 9.54}
+    oldSize: {x: 5.19, y: 8.8}
     newSize: {x: 10.2, y: 10.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6263,7 +6082,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1422327909, guid: 83ed691084c601c45bd911d0f45a2974, type: 3}
+  m_Sprite: {fileID: -2000925348, guid: 671c7096008f61940805ae234111057a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6283,7 +6102,7 @@ Transform:
   m_GameObject: {fileID: 1504255252}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.24, y: 0, z: 0}
+  m_LocalPosition: {x: -13.13, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6457,7 +6276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToMove: {fileID: 1122570720}
-  targetX: 11.1
+  targetX: 13.55
 --- !u!1 &1516475571
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,7 +6382,7 @@ GameObject:
   - component: {fileID: 1540058125}
   - component: {fileID: 1540058127}
   m_Layer: 0
-  m_Name: ChunLi Dialogues
+  m_Name: Bo Tran Dialougues
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6582,54 +6401,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 18
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":69.9988251,"yPos":165.66687},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I''ll
-    get your papers done right away, hand me your documents.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":69.331955,"yPos":350.33316},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Another
-    dying mom huh ? Hand me the documents, I''ll get you through.","parentUIDs":[10],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":642.332153,"yPos":251.000031},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Show
-    me your documents !","parentUIDs":[2,14],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":-650.3335,"yPos":238.000031},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":159.666687,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
     sir, my mom said to give this to you and ask for papers and give document. Also
-    pay you with everything she gave me *hands letter*\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":352.665466,"yPos":159.333191},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"
-    yaaayyyy!!!!","parentUIDs":[9,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-404.333374,"yPos":240.333374},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
+    pay you with everything she gave me *hands letter*\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dimitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":404.333557,"yPos":23.666626},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
     May, we have lost everything and I am dying from salt lung, I dont want my kid
-    to bare me dying in her hands. Could you do me a favor and get her inside ?\n\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-152.331863,"yPos":241.3335},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"We
-    read about an orphanage for refugees she''ll make her way thru it. I have given
-    her more than enough freshwater and money for the payment Just get her inside
-    please","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":360.665955,"yPos":333.33313},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"*sobbing*","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Chun
-    Li","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    to bare me dying in her hands. Could you do me a favor and get her inside ?\n\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dmitri","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
-  DefaultName: 
-  DefaultSprite: {fileID: 0}
+  DefaultName: Dimitri
+  DefaultSprite: {fileID: 87042825, guid: c4e42db96355fdb46bf27c8894c7d401, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 1126812517}
-  - {fileID: 1126812514}
   - {fileID: 1126812526}
-  - {fileID: 1126812524}
-  - {fileID: 1126812523}
-  - {fileID: 1126812522}
-  - {fileID: 1126812520}
-  - {fileID: 1126812527}
   - {fileID: 1126812528}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1972805778}
-        m_TargetAssemblyTypeName: MoveCharacterBlockerEvent, Assembly-CSharp
-        m_MethodName: TriggerBlockerMovement
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1540058126
 Transform:
   m_ObjectHideFlags: 0
@@ -6737,7 +6526,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2056623361, guid: d79ca88adc2e8ec45b176b726e5f1f78, type: 3}
+  m_Sprite: {fileID: 1892599736, guid: fe97805d74117214084e0beae4f63ff6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7612,6 +7401,7 @@ GameObject:
   - component: {fileID: 1848930744}
   - component: {fileID: 1848930746}
   - component: {fileID: 1848930745}
+  - component: {fileID: 1848930747}
   m_Layer: 0
   m_Name: Red
   m_TagString: Untagged
@@ -7778,6 +7568,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetY: 5
   fadeDuration: 2
+--- !u!114 &1848930747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848930740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf40342e04c4064989da140a8e804a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1856547781
 GameObject:
   m_ObjectHideFlags: 0
@@ -8135,7 +7937,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1099229268, guid: a02c497857ab2f643a3e0e18a48684e8, type: 3}
+  m_Sprite: {fileID: -95682019, guid: 6f98f768b66d28342bc6b14c55e909ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8378,7 +8180,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2056623361, guid: d79ca88adc2e8ec45b176b726e5f1f78, type: 3}
+  m_Sprite: {fileID: 1892599736, guid: fe97805d74117214084e0beae4f63ff6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9432,7 +9234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToMove: {fileID: 1122570720}
-  targetX: 11.1
+  targetX: 13.55
 --- !u!114 &2141318798
 MonoBehaviour:
   m_ObjectHideFlags: 0
