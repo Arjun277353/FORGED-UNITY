@@ -1476,11 +1476,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 358914860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21367a6894ea2cb43ac95f95d3f756a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ad69e9b478a78149a1769f24b881cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetAnimator: {fileID: 56715030}
-  moveFadeScript: {fileID: 2047258070}
+  moveFadeScript: {fileID: 2047258072}
 --- !u!1 &364933900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,7 +2182,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 358914864}
-        m_TargetAssemblyTypeName: CloseEnable, Assembly-CSharp
+        m_TargetAssemblyTypeName: CloseEnableBoTran, Assembly-CSharp
         m_MethodName: EnableTrigger
         m_Mode: 1
         m_Arguments:
@@ -2214,7 +2214,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: -2000925348, guid: 8b6a6aa71b9f1174dae701c43ed98201, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &479700873
 MonoBehaviour:
@@ -4289,6 +4289,15 @@ GameObject:
   - component: {fileID: 1126812517}
   - component: {fileID: 1126812528}
   - component: {fileID: 1126812529}
+  - component: {fileID: 1126812532}
+  - component: {fileID: 1126812531}
+  - component: {fileID: 1126812530}
+  - component: {fileID: 1126812538}
+  - component: {fileID: 1126812537}
+  - component: {fileID: 1126812536}
+  - component: {fileID: 1126812535}
+  - component: {fileID: 1126812534}
+  - component: {fileID: 1126812533}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -4377,6 +4386,225 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 7
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1126812530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 23
+  TMPFont: {fileID: 0}
+  Icon: {fileID: -2000925348, guid: 8b6a6aa71b9f1174dae701c43ed98201, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1126812531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 21
+  TMPFont: {fileID: 0}
+  Icon: {fileID: -2000925348, guid: 8b6a6aa71b9f1174dae701c43ed98201, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1126812532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 18
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1126812533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1806009414}
+        m_TargetAssemblyTypeName: MoveDocumentEvent, Assembly-CSharp
+        m_MethodName: TriggerDocumentMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1806009417}
+        m_TargetAssemblyTypeName: IDHover, Assembly-CSharp
+        m_MethodName: EnableCollider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1071556601}
+        m_TargetAssemblyTypeName: PlaySoundEvent, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1856547782}
+        m_TargetAssemblyTypeName: DocumentHoverController, Assembly-CSharp
+        m_MethodName: EnableHoverOnDocument
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 29
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1126812534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 28
+  TMPFont: {fileID: 0}
+  Icon: {fileID: -2000925348, guid: 8b6a6aa71b9f1174dae701c43ed98201, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1126812535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 27
+  TMPFont: {fileID: 0}
+  Icon: {fileID: -2000925348, guid: 8b6a6aa71b9f1174dae701c43ed98201, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1126812536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 26
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1126812537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 25
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1126812538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126812513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 24
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -5529,10 +5757,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":83.66666,"yPos":119},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Hand
-    over Documents","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":82.33331,"yPos":315.000031},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"*END*","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":85.66666,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
-    you go ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":85.33331,"yPos":206.000031},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
-    you sir for the documents ","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":134.000015,"yPos":194.333344},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Hand
+    over Documents","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":132.666672,"yPos":390.333344},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"*END*","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":136.000015,"yPos":97.33334},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"There
+    you go, dont forget you owe us","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":135.666672,"yPos":281.333374},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Thanks
+    dude","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Bo
+    Tran","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -5547,9 +5776,9 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1860551708}
-        m_TargetAssemblyTypeName: MoveCharacterBlockerEvent, Assembly-CSharp
-        m_MethodName: TriggerBlockerMovement
+      - m_Target: {fileID: 358914864}
+        m_TargetAssemblyTypeName: CloseEnableBoTran, Assembly-CSharp
+        m_MethodName: EnableTrigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6380,7 +6609,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1540058126}
   - component: {fileID: 1540058125}
-  - component: {fileID: 1540058127}
   m_Layer: 0
   m_Name: Bo Tran Dialougues
   m_TagString: Untagged
@@ -6400,11 +6628,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 18
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":210,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
-    sir, my mom said to give this to you and ask for papers and give document. Also
-    pay you with everything she gave me *hands letter*\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Bo
-    Tran ","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 30
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":158.333313,"yPos":281.6666},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    dont work for free \"DUDE\"","parentUIDs":[21],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":-123.666542,"yPos":284.333374},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Payment
+    ?","parentUIDs":[21],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":-266.3331,"yPos":507.6667},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"gotchu
+    ill do it on the house if you pay extra later","parentUIDs":[23],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":280.333557,"yPos":503.6667},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"Hell
+    NAAAAA","parentUIDs":[23],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-8.999985,"yPos":733.666748},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright...,
+    Show me your documents","parentUIDs":[27,28],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":true,"xPos":12.3333435,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
+    dude get me the papers i really want to get in and get a proper job.\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Bo
+    Tran ","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":15.0000229,"yPos":150.6667},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"really
+    want the corporate peaceful jobs away from all this death and mess","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Bo
+    Tran","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":25},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":14.3334579,"yPos":369.333374},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    get the job you get the money","parentUIDs":[18,24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"
+    Bo Tran","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":-143.666687,"yPos":592.6669},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure
+    man","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Bo
+    Tran","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":139.666687,"yPos":598.6665},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    will have my word !","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Bo
+    Tran","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Bo Tran
   DefaultSprite: {fileID: -2000925348, guid: 8b6a6aa71b9f1174dae701c43ed98201, type: 3}
@@ -6413,6 +6653,15 @@ MonoBehaviour:
   - {fileID: 1126812517}
   - {fileID: 1126812528}
   - {fileID: 1126812529}
+  - {fileID: 1126812532}
+  - {fileID: 1126812531}
+  - {fileID: 1126812530}
+  - {fileID: 1126812538}
+  - {fileID: 1126812537}
+  - {fileID: 1126812536}
+  - {fileID: 1126812535}
+  - {fileID: 1126812534}
+  - {fileID: 1126812533}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -6434,18 +6683,6 @@ Transform:
   - {fileID: 1126812515}
   m_Father: {fileID: 1122570720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1540058127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540058124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d203658121bd5438a1c4af189f0fcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1564028835
 GameObject:
   m_ObjectHideFlags: 0
@@ -8792,9 +9029,9 @@ GameObject:
   - component: {fileID: 2047258069}
   - component: {fileID: 2047258068}
   - component: {fileID: 2047258067}
-  - component: {fileID: 2047258070}
+  - component: {fileID: 2047258072}
   - component: {fileID: 2047258071}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fade+transition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8869,21 +9106,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &2047258070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047258065}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bcaaddcd870ff148a567c7444a25775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 5, z: 1}
-  moveSpeed: 8
-  fadeSpeed: 0.5
 --- !u!65 &2047258071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8905,6 +9127,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.2204466e-16, z: 10.000002}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2047258072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047258065}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af1efa28698073949a217ecba0fca338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 5, z: 1}
+  moveSpeed: 8
+  fadeSpeed: 0.5
 --- !u!1 &2053421363
 GameObject:
   m_ObjectHideFlags: 0

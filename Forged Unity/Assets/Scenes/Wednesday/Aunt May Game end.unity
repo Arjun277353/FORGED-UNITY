@@ -812,6 +812,8 @@ GameObject:
   - component: {fileID: 281477436}
   - component: {fileID: 281477440}
   - component: {fileID: 281477439}
+  - component: {fileID: 281477442}
+  - component: {fileID: 281477441}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -1240,6 +1242,44 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 24
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &281477441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281477409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 28
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &281477442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281477409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 27
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -7469,7 +7509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 26
+  CurrentIDCounter: 29
   json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":668.9994,\"yPos\":124.333557},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ma'am,
     yes ma'am\",\"parentUIDs\":[16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":138.000427,\"yPos\":152.999817},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     dont wanna work Auntie :(\",\"parentUIDs\":[16],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":667.9999,\"yPos\":193.666687},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alright\",\"parentUIDs\":[16],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":135.667053,\"yPos\":363.000122},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*END*\",\"parentUIDs\":[21],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1000.00012,\"yPos\":191.000031},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Quite
@@ -7506,6 +7546,8 @@ MonoBehaviour:
   - {fileID: 281477436}
   - {fileID: 281477440}
   - {fileID: 281477439}
+  - {fileID: 281477442}
+  - {fileID: 281477441}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
