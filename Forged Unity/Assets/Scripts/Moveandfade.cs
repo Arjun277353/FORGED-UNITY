@@ -53,6 +53,8 @@ public class MoveAndFade : MonoBehaviour
             Color color = material.color;
             color.a = Mathf.MoveTowards(color.a, 0.55f, fadeSpeed * Time.deltaTime);
             material.color = color;
+
+            for
         }
     }
 }
